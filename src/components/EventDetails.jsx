@@ -22,12 +22,12 @@ const EventDetails = () => {
     {
       icon: "/icons/deckchair.svg",
       color: "#FF6B6B",
-      text: "¡Llevar reposera!",
+      text: "Llevá tu reposera!",
     },
     {
       icon: "/icons/mate.svg",
       color: "#8D6E63",
-      text: "¡Llevar mate!",
+      text: "Y no te olvides del mate!",
     },
   ];
 

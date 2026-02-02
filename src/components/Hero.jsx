@@ -171,8 +171,8 @@ const Hero = () => {
       </motion.div>
 
       {/* GLOBOS - Centro inferior (opcional) */}
-      {/* <motion.div
-        animate={{ y: [0, -20, 0], scale: [1, 1.1, 1] }}
+      <motion.div
+        animate={{ y: [0, -80, 0], scale: [1, 1.3, 1] }}
         transition={{
           duration: 3,
           repeat: Infinity,
@@ -181,25 +181,25 @@ const Hero = () => {
         }}
         style={{
           position: "absolute",
-          bottom: "15%",
-          left: "50%",
+          bottom: "0%",
+          left: "10%",
           transform: "translateX(-50%)",
           width: "60px",
           height: "80px",
-          zIndex: 1,
+          zIndex:1,
         }}
       >
         <img
           src="/images/globos.png"
           alt="Globos"
           style={{
-            width: "100%",
-            height: "100%",
+            width: "120%",
+            height: "130%",
             objectFit: "contain",
             filter: "drop-shadow(0 5px 10px rgba(0,0,0,0.2))",
           }}
         />
-      </motion.div> */}
+      </motion.div>
 
       {/* Contenedor del texto */}
       <Box
@@ -232,7 +232,7 @@ const Hero = () => {
               textStroke: "3px #ffffff",
               paintOrder: "stroke fill",
               textShadow: "3px 3px 6px rgba(0,0,0,0.2)",
-              mb: 0,
+              mb: 2,
             }}
           >
             Llega Mi Primer Cumple!
@@ -249,6 +249,7 @@ const Hero = () => {
               textStroke: "2px #9d59a2",
               paintOrder: "stroke fill",
               textShadow: "3px 3px 6px rgba(0,0,0,0.2)",
+              mb: 2,
             }}
           >
             y quiero festejarlo con ustedes!
