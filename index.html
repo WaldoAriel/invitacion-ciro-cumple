@@ -1,31 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Primer Cumple de Ciro</title>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Andika:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Estilos básicos -->
+
+    <!-- TÍTULO PRINCIPAL - Lo que se ve en la pestaña del navegador -->
+    <title>🎉 ¡Primer Cumple de Ciro! 🎂 | 16 de Febrero 2026</title>
+
+    <!-- DESCRIPCIÓN GENERAL PARA MOTORES DE BÚSQUEDA -->
+    <meta
+      name="description"
+      content="Invitación especial al primer cumpleaños de Ciro. ¡Celebremos juntos este día mágico! Estancia Río Quillinzo - 16/02/2026 desde las 10:00 AM"
+    />
+
+    <!-- OPEN GRAPH META TAGS (WhatsApp, Facebook, Instagram, etc.) -->
+    <!-- Tipo de contenido -->
+    <meta property="og:type" content="website" />
+
+    <!-- URL CANÓNICA - IMPORTANTE: Cambia por tu URL real de Netlify -->
+    <meta property="og:url" content="https://cumpleciro.netlify.app/" />
+
+    <!-- TÍTULO que se mostrará en WhatsApp (máx 65 caracteres) -->
+    <meta property="og:title" content="🎉 ¡Primer Cumple de Ciro! 🎂" />
+
+    <!-- DESCRIPCIÓN que se mostrará en WhatsApp (máx 155 caracteres) -->
+    <meta
+      property="og:description"
+      content="Invitación al primer cumple de Ciro. 16/02/2026 - Estancia Río Quillinzo - ¡Celebremos juntos!"
+    />
+
+    <!-- IMAGEN para la preview - IMPORTANTE: Ruta correcta de tu imagen -->
+    <meta
+      property="og:image"
+      content="https://cumpleciro.netlify.app/images/og-image.jpg"
+    />
+
+    <!-- Dimensiones de la imagen (recomendado 1200x630) -->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Texto alternativo para la imagen -->
+    <meta
+      property="og:image:alt"
+      content="Invitación al primer cumple de Ciro"
+    />
+
+    <!-- Idioma del sitio -->
+    <meta property="og:locale" content="es_AR" />
+
+    <!-- SITIO WEB (opcional) -->
+    <meta property="og:site_name" content="Invitación Ciro" />
+
+    <!-- TWITTER CARD (opcional pero recomendado) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="🎉 ¡Primer Cumple de Ciro! 🎂" />
+    <meta
+      name="twitter:description"
+      content="Invitación especial al primer cumpleaños de Ciro. ¡Celebremos juntos este día mágico!"
+    />
+    <meta
+      name="twitter:image"
+      content="https://cumpleciro.netlify.app/images/og-image.jpg"
+    />
+
+    <!-- THEME COLOR PARA MÓVILES -->
+    <meta name="theme-color" content="#FFD700" />
+
+    <!-- APPLE TOUCH ICON (para cuando se guarde en pantalla de inicio) -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Cumple Ciro" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Andika:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ESTILOS BÁSICOS -->
     <style>
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
-      
+
       body {
         overflow-x: hidden;
+        background-color: #fff9c4; /* Color de fondo amarillo suave */
+        font-family: "Andika", "Arial", sans-serif;
+      }
+
+      /* Estilos de carga inicial */
+      #root {
+        min-height: 100vh;
+      }
+
+      /* Mejora de rendimiento para imágenes */
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
       }
     </style>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <!-- SCRIPT PARA MEJORAR LOADING (opcional) -->
+    <script>
+      // Evitar destellos de contenido sin estilo
+      document.documentElement.classList.add("js");
+
+      // Cargar fuentes de forma optimizada
+      if ("fonts" in document) {
+        document.fonts.load('1em "Hachi Maru Pop"');
+        document.fonts.load('1em "Andika"');
+      }
+    </script>
   </body>
 </html>
