@@ -141,7 +141,7 @@ const LocationMap = () => {
                 borderRadius: 2,
               }}
             >
-              Un lugar mágico rodeado de naturaleza para celebrar este día especial
+              Un lugar mágico rodeado de naturaleza para celebrar este día tan especial
             </Typography>
 
             {/* Botón */}

@@ -12,7 +12,7 @@ const EventDetails = () => {
     {
       icon: "/icons/calendar.svg",
       color: "#4FC3F7",
-      text: "Día: 16/02/2026 - Hora: desde las 10:00 AM",
+      text: "Día: 16 de febrero desde las 10:00 AM",
     },
     {
       icon: "/icons/rio.svg",
@@ -43,7 +43,7 @@ const EventDetails = () => {
           <Typography
             variant="h3"
             sx={{
-              mb: 5,
+              my: 5,
               color: "#ffffff",
               fontSize: { xs: "1.8rem", sm: "2.2rem" },
               position: "relative",
@@ -61,7 +61,7 @@ const EventDetails = () => {
               },
             }}
           >
-            Detalles del Evento
+            Detalles de la Fiesta
           </Typography>
 
           <Box sx={{ maxWidth: "500px", mx: "auto" }}>

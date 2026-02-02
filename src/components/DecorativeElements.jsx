@@ -83,7 +83,7 @@ const DecorativeElements = () => {
       ))}
 
       {/* Animalitos peluche animados */}
-      {plushAnimals.map((animal, index) => (
+      {/* {plushAnimals.map((animal, index) => (
         <motion.div
           key={`animal-${index}`}
           animate={{ y: [0, -20, 0] }}
@@ -103,7 +103,7 @@ const DecorativeElements = () => {
         >
           {animal.emoji}
         </motion.div>
-      ))}
+      ))} */}
 
       {/* Globos flotantes */}
       {balloons.map((balloon, index) => (
@@ -145,7 +145,7 @@ const DecorativeElements = () => {
       ))}
 
       {/* Estrellitas titilantes */}
-      {[...Array(20)].map((_, i) => (
+      {/* {[...Array(20)].map((_, i) => (
         <motion.div
           key={`star-${i}`}
           animate={{ opacity: [0.3, 1, 0.3], scale: [1, 1.2, 1] }}
@@ -164,10 +164,10 @@ const DecorativeElements = () => {
         >
           ✨
         </motion.div>
-      ))}
+      ))} */}
 
       {/* Olas decorativas en el fondo */}
-      <Box
+      {/* <Box
         sx={{
           position: 'absolute',
           bottom: 0,
@@ -189,7 +189,7 @@ const DecorativeElements = () => {
             borderRadius: '50% 50% 0 0',
           }}
         />
-      </Box>
+      </Box> */}
     </Box>
   )
 }

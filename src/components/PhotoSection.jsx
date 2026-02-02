@@ -1,10 +1,17 @@
-import React from 'react'
-import { Box, Typography } from '@mui/material'
-import { motion } from 'framer-motion'
+import React from "react";
+import { Box, Typography } from "@mui/material";
+import { motion } from "framer-motion";
 
 const PhotoSection = () => {
   return (
-    <Box sx={{ height: '100vw', position: 'relative', marginTop: '-40vw', marginBottom: '60vw' }}>
+    <Box
+      sx={{
+        height: "100vw",
+        position: "relative",
+        marginTop: "-40vw",
+        marginBottom: "60vw",
+      }}
+    >
       <Box sx={{ mt: 1, mb: 4 }}>
         {/* Foto de Ciro - Ancho completo */}
         <motion.div
@@ -12,28 +19,32 @@ const PhotoSection = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true, margin: "-50px" }}
-          style={{ marginBottom: '1.5rem' }}
+          style={{ marginBottom: "1.5rem" }}
         >
           <Box
             component="img"
             src="/ciro.png"
             alt="Ciro"
             sx={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-              display: 'block',
-              objectPosition: 'center 30%', // Ajusta para enfocar la cara
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              display: "block",
+              objectPosition: "center 30%",
             }}
           />
         </motion.div>
 
         {/* Texto centrado sobre la foto o debajo */}
-        <Box sx={{ 
-          textAlign: 'center', 
-          px: { xs: 2, sm: 3 },
-          mt: { xs: -6, sm: -8 }
-        }}>
+        <Box
+          sx={{
+            textAlign: "center",
+            px: { xs: 2, sm: 3 },
+            mt: { xs: -6, sm: -8 },
+            position: "relative",
+            zIndex: 2,
+          }}
+        >
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -43,22 +54,40 @@ const PhotoSection = () => {
             <Typography
               variant="h1"
               sx={{
-                fontSize: { xs: '1.5rem', sm: '1.8rem' },
-                fontStyle: 'italic',
-                color: '#9d59a2',
+                fontSize: { xs: "1.5rem", sm: "1.8rem" },
+                fontStyle: "italic",
+                color: "Background",
                 lineHeight: 1.5,
-                maxWidth: '500px',
-                mx:4,
+                maxWidth: "500px",
+                mx: "auto",
                 fontFamily: '"Andika", sans-serif',
+                textShadow: "0 1px 2px rgba(255,255,255,0.8)",
+                pb: 3, // Espacio para la línea
+                position: "relative",
               }}
             >
-              "Su sonrisa es nuestro rayito de sol, su mirada, un mundo de amor."
+              "Su sonrisa es nuestro rayito de sol, su mirada, un mundo de
+              amor."
             </Typography>
+            {/* Línea divisoria con gradiente */}
+            <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ width: "150px" }}
+              transition={{ delay: 0.4, duration: 1 }}
+              viewport={{ once: true }}
+              style={{
+                height: "2px",
+                background:
+                  "linear-gradient(90deg, transparent, #ffffff, transparent)",
+                margin: "10px auto 0 auto",
+                borderRadius: "1px",
+              }}
+            />
           </motion.div>
         </Box>
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default PhotoSection
+export default PhotoSection;
